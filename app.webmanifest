@@ -1,0 +1,27 @@
+{
+  "name": "Jaystar translator, Translate sentence",
+  "short_name": "Jat",
+  "start_url": "./?utm_source=pwa",
+  "orientation": "portrait",
+  "theme_color": "#404FDC",
+  "scope": "./",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "types": "image/png"
+    },
+    {
+      "src": "icons/icon-1024.png",
+      "sizes": "1024x1024",
+      "types": "image/png"
+    },
+    {
+      "src": "icons/icon-maskable.png",
+      "sizes": "512x512",
+      "types": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

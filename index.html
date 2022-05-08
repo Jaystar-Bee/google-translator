@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <!----Adding for mobile app--->
+    <script src="sw-register.js"></script>
+    <link rel="manifest" href="app.webmanifest" />
+    <meta name="theme-color" content="#404FDC" />
+    <link rel="apple-touch-icon" href="icons/icon-512.png" />
+    <!----Adding for mobile app--->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Language Translator || & more</title>
+  </head>
+  <body>
+    <!----Header-->
+    <header>
+      <div>
+        <h1>Jaystar Translator</h1>
+        <small>Translate to more than 50+ languages</small>
+      </div>
+    </header>
+    <!----Body Texts-->
+    <main>
+      <div>
+        <form>
+          <div class="form">
+            <!---Action to take-->
+            <div class="select__tab">
+              <select name="action" id="action">
+                <option value="" selected disabled>Action</option>
+                <option value="detect">Detect</option>
+                <option value="translate">Translate</option>
+              </select>
+            </div>
+            <!---Search bar-->
+            <div>
+              <input
+                type="text"
+                placeholder="Enter your Texts"
+                id="userInput"
+              />
+            </div>
+            <div class="translate">
+              <!---From-->
+              <div class="select__tab">
+                <select name="from" id="fromSelect">
+                  <option value="" selected disabled>From</option>
+                </select>
+              </div>
+
+              <!---To-->
+              <div class="select__tab">
+                <select name="from" id="toSelect">
+                  <option value="" selected disabled>To</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="button"><button>Action</button></div>
+        </form>
+      </div>
+      <!---Result Area-->
+      <div class="result">
+        <!-- <p >The lanuage of the text above is <strong class>French</strong></p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas,
+          commodi!
+        </p> -->
+      </div>
+    </main>
+    <!---Footer-->
+    <footer>
+      <div>Designed with &nbsp; ❤ &nbsp; by Jaystar</div>
+      <small>Translate || Detect Language</small>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  /* font-size: 65.2%; */
+}
+
+header {
+  background-color: rgb(64, 79, 220);
+  text-align: center;
+  color: #fff;
+  padding: 1rem;
+  user-select: none;
+}
+main {
+  background-color: rgba(196, 152, 140, 0.477);
+  padding: 2rem 4rem;
+  text-align: center;
+  min-height: 75vh;
+  padding-top: 4rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+}
+form {
+  margin-bottom: 2rem;
+  margin: 0 auto;
+  place-content: center;
+}
+.select__tab {
+  padding-right: 1rem;
+  background-color: #fff;
+  border-radius: 2rem;
+}
+select {
+  user-select: none;
+}
+select,
+input {
+  background-color: #fff;
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+}
+input {
+  min-width: 310px;
+}
+.translate {
+  display: flex;
+  gap: 2rem;
+}
+button {
+  padding: 1.2rem 2rem;
+  border: none;
+  outline: none;
+  background-color: rgb(64, 79, 220);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 2rem;
+  margin-top: 1rem;
+  transition: all 0.5s ease-in;
+  user-select: none;
+}
+button:hover {
+  background-color: rgb(45, 60, 191);
+  box-shadow: 0 5px 1rem rgba(83, 139, 244, 0.761);
+}
+button:focus {
+  box-shadow: 0 1px 0.3rem rgba(83, 139, 244, 0.761);
+}
+footer {
+  text-align: center;
+  background-color: rgb(54, 54, 54);
+  color: #fff;
+  padding: 4rem;
+  user-select: none;
+}
+footer > div {
+  margin-bottom: 0.5rem;
+}
+.result {
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    padding-top: 1rem;
+  }
+  h1 {
+    font-size: 1.4rem;
+  }
+}
